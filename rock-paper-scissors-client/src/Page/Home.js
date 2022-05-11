@@ -1,10 +1,10 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-const Home = () => {
+const Home = ({ setRps }) => {
   return (
     <>
-      <Hero />
+      <Hero setRps={setRps} />
     </>
   );
 };
