@@ -10,10 +10,42 @@ const Play = ({ rps }) => {
   const choseRandom = () => {
     const images = [rock, paper, scissors];
     const match = images[[Math.floor(Math.random() * 3)]];
-    console.log(rps, match);
+    // console.log(rps, match);
     if (rps === match) {
-      console.log("jooss");
+      console.log("Draw");
     }
+
+    // paper
+    if (rps === paper && match === rock) {
+      let newScore = score + 1;
+      console.log("You wins");
+      setScore(newScore);
+    } else if (rps === rock && match === paper) {
+      let newScore = score - 1;
+      console.log("opponent wins");
+      setScore(newScore);
+    }
+    // rock
+    if (rps === rock && match === scissors) {
+      let newScore = score + 1;
+      console.log("You wins, ");
+      setScore(newScore);
+    } else if (rps === scissors && match === rock) {
+      let newScore = score - 1;
+      console.log("opponent wins");
+      setScore(newScore);
+    }
+    // scissor
+    if (rps === scissors && match === paper) {
+      let newScore = score + 1;
+      console.log("You wins");
+      setScore(newScore);
+    } else if (rps === paper && match === scissors) {
+      let newScore = score - 1;
+      console.log("opponent wins");
+      setScore(newScore);
+    }
+    console.log(score);
     setShow(match);
   };
   return (
