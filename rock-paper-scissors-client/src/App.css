@@ -49,6 +49,14 @@ body{
     background-color: white;
     cursor: pointer;
 }
+.rock-paper-scissior.win{
+    background-color: rgb(69, 194, 69);
+    /* color: white; */
+}
+.rock-paper-scissior.lost{
+    
+    background-color: rgb(236, 114, 114);
+}
 #rock{
     position: absolute;
     bottom: 0;
