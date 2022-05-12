@@ -34,37 +34,37 @@
     </style>
   </head>
   <body>
-    <main class="score-div">
-      <section class="mx-auto" style="width: 50vw">
+    <main className="score-div">
+      <section className="mx-auto" style="width: 50vw">
         <div
-          class="border border-2 border-secondary rounded row row-cols-12 row-cols-md-6 row-cols-lg-6 justify-content-between align-content-center p-4"
+          className="border border-2 border-secondary rounded row row-cols-12 row-cols-md-6 row-cols-lg-6 justify-content-between align-content-center p-4"
         >
-          <img src="./images/logo.svg" alt="logo" class="w-auto" />
-          <div class="card" style="width: 10rem">
-            <div class="card-body text-black text-center">
-              <h5 class="card-title">Score</h5>
-              <p class="card-text">0</p>
+          <img src="./images/logo.svg" alt="logo" className="w-auto" />
+          <div className="card" style="width: 10rem">
+            <div className="card-body text-black text-center">
+              <h5 className="card-title">Score</h5>
+              <p className="card-text">0</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="main-game-div my-5">
+      <section className="main-game-div my-5">
         <div>
           <img
-            class="rock-paper-scissior"
+            className="rock-paper-scissior"
             id="rock"
             src="./images//icon-rock.svg"
             alt=""
           />
           <img id="triangle" src="./images//bg-triangle.svg" alt="" />
           <img
-            class="rock-paper-scissior"
+            className="rock-paper-scissior"
             id="scissors"
             src="./images/icon-scissors.svg"
             alt=""
           />
           <img
-            class="rock-paper-scissior"
+            className="rock-paper-scissior"
             id="paper"
             src="./images/icon-paper.svg"
             alt=""
@@ -72,17 +72,17 @@
         </div>
       </section>
     </main>
-    <div class="d-flex justify-content-end text-white me-2">
+    <div className="d-flex justify-content-end text-white me-2">
       <button
         type="button"
-        class="btn btn-outline-primary"
+        className="btn btn-outline-primary"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
         Rules
       </button>
       <div
-        class="modal fade"
+        className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -90,28 +90,30 @@
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="staticBackdropLabel">
+                Modal title
+              </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <img
                 src="./images//image-rules.svg"
-                class="mx-auto d-block"
+                className="mx-auto d-block"
                 alt=""
               />
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
@@ -121,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="attribution">
+    <div className="attribution">
       Coded by <a href="https://github.com/mdsaharshital">Md Shahar Shitol</a>.
     </div>
     <script

@@ -45,7 +45,7 @@ const Play = ({ rps, score, setScore }) => {
   };
   return (
     <div>
-      <div className="w-full md:w-1/2 mx-auto flex justify-between items-center mt-10 mb-24 md:mt-20 md:mb-40">
+      <div className="w-full md:w-1/2 mx-auto flex justify-between items-center mt-10 mb-24 md:mt-20 lg:mb-28">
         <div className="">
           <h1 className="text-center">You picked</h1>
           <img
