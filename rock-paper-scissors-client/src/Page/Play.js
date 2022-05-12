@@ -4,7 +4,6 @@ import paper from "../images/icon-paper.svg";
 import scissors from "../images/icon-scissors.svg";
 
 const Play = ({ rps, score, setScore }) => {
-  const [isWon, setIsWon] = useState();
   const [show, setShow] = useState("");
   const [status, setStatus] = useState("-");
   const handleAllAction = (newScore, msg) => {
@@ -46,7 +45,7 @@ const Play = ({ rps, score, setScore }) => {
   };
   return (
     <div>
-      <div className="w-1/2 mx-auto flex justify-between items-center ">
+      <div className="w-full md:w-1/2 mx-auto flex justify-between items-center mt-10 mb-24 md:mt-20 md:mb-40">
         <div className="">
           <h1 className="text-center">You picked</h1>
           <img
@@ -80,15 +79,19 @@ const Play = ({ rps, score, setScore }) => {
         </div>
         <div className="">
           <h1 className="text-center ">The House picked</h1>
-          <img
-            src={show}
-            className={
-              status !== "You Won"
-                ? "rock-paper-scissior mt-4 win"
-                : "rock-paper-scissior mt-4 lost"
-            }
-            alt=""
-          />
+          {show ? (
+            <img
+              src={show}
+              className={
+                status !== "You Won"
+                  ? "rock-paper-scissior mt-4 win"
+                  : "rock-paper-scissior mt-4 lost"
+              }
+              alt=""
+            />
+          ) : (
+            <div className="nothing-to-show"></div>
+          )}
         </div>
       </div>
     </div>

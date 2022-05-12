@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import Rules from "./components/Rules";
 import Home from "./Page/Home";
 import Play from "./Page/Play";
 
@@ -18,6 +19,7 @@ function App() {
           element={<Play rps={rps} score={score} setScore={setScore} />}
         ></Route>
       </Routes>
+      <Rules />
     </div>
   );
 }
