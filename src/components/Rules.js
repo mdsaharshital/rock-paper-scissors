@@ -8,7 +8,7 @@ const Rules = () => {
         htmlFor="my-modal-6"
         className="btn modal-button btn-outline text-white "
       >
-        Rules
+        Rules.
       </label>
 
       <input type="checkbox" id="my-modal-6" className="modal-toggle" />
